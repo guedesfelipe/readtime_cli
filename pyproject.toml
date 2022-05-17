@@ -1,9 +1,12 @@
 [tool.poetry]
 name = "readtime_cli"
 version = "0.1.0"
-description = ""
+description = "CLI to calculates the time some text takes the average human to read, based on Medium's read time forumula."
 authors = ["Felipe Guedes <contatofelipeguedes@gmail.com>"]
 readme = "README.md"
+repository = "https://github.com/guedesfelipe/readtime_cli"
+documentation = "https://github.com/guedesfelipe/readtime_cli"
+keywords = ["python", "readtime", "readtime_cli", "cli"]
 
 [tool.poetry.scripts]
 readtime = "readtime_cli.main:app"
