@@ -46,27 +46,27 @@ Readtime-CLI stands on the shouders of giants:
 
 ### Version
 
-    ```sh
-    readtime version
-    ```
+```sh
+readtime version
+```
 
 ### Calculate Read time Markdown files
 
-    ```sh
-    readtime md FILE_PATH [OPTIONS]
-    ```
+```sh
+readtime md FILE_PATH [OPTIONS]
+```
 
 ### Calculate Read time HTML files
 
-    ```sh
-    readtime html FILE_PATH [OPTIONS]
-    ```
+```sh
+readtime html FILE_PATH [OPTIONS]
+```
 
 ### Calculate Read time Text files
 
-    ```sh
-    readtime text FILE_PATH [OPTIONS]
-    ```
+```sh
+readtime text FILE_PATH [OPTIONS]
+```
 
 ### Options for all commands
 
