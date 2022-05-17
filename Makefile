@@ -83,3 +83,8 @@ coverage:
 .PHONY: coverage-html
 coverage-html:
 	@poetry run pytest --cov --cov-report html -v
+
+#* Publish
+.PHONY: publish
+publish:
+	@poetry publish --build
