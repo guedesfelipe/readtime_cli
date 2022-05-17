@@ -32,13 +32,13 @@ Readtime-CLI stands on the shouders of giants:
 
 ### Poetry
 
-    poetry add readtime_cli
+    poetry add readtime-cli
 
 ### Pip
 
     virtualenv venv
     . venv/bin/activate
-    pip install readtime_cli
+    pip install readtime-cli
 
 
 ## 💻 Usage
