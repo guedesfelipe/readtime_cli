@@ -11,6 +11,12 @@
     <a href="https://codecov.io/gh/guedesfelipe/readtime_cli" target="_blank">
       <img src="https://codecov.io/gh/guedesfelipe/readtime_cli/branch/main/graph/badge.svg" />
     </a>
+    <a href="https://pypi.org/project/readtime-cli/" target="_blank">
+      <img src="https://img.shields.io/pypi/v/readtime-cli?color=%2334D058&label=pypi%20package" />
+    </a>
+    <a href="" target="_blank">
+      <img src="https://img.shields.io/pypi/pyversions/readtime-cli.svg?color=%2334D058&logo=python&logoColor=yellow" />
+    </a>
 </p>
 
 <p align="center">
