@@ -1,6 +1,21 @@
-# 📖 Readtime-CLI
+<h1 align="center">
+  📖 Readtime-CLI
+</h1>
+<p align="center">
+    <a href="https://github.com/guedesfelipe/readtime_cli/actions/workflows/ci.yml" target="_blank">
+        <img src="https://github.com/guedesfelipe/readtime_cli/actions/workflows/ci.yml/badge.svg" />
+    </a>
+    <a href="https://github.com/guedesfelipe/readtime_cli/actions/workflows/security.yml" target="_blank">
+        <img src="https://github.com/guedesfelipe/readtime_cli/actions/workflows/security.yml/badge.svg" />
+    </a>
+    <a href="https://codecov.io/gh/guedesfelipe/readtime_cli" target="_blank">
+      <img src="https://codecov.io/gh/guedesfelipe/readtime_cli/branch/main/graph/badge.svg" />
+    </a>
+</p>
 
-CLI to calculates the time some text takes the average human to read, based on Medium's [read time forumula](https://help.medium.com/hc/en-us/articles/214991667-Read-time).
+<p align="center">
+  <em>CLI to calculates the time some text takes the average human to read, based on Medium's <a href="https://help.medium.com/hc/en-us/articles/214991667-Read-time" target="_blank">read time forumula</a>.</em>
+</p>
 
 
 ## 🧮 Algorithm
@@ -19,6 +34,8 @@ With `img_weight` starting at `12` and decreasing one second with each image enc
 
 
 ## Requirements
+
+MacOS or Linux
 
 Python 3.9+
 
