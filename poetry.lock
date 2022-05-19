@@ -131,11 +131,11 @@ redis = ["redis (>=2.10.5)"]
 
 [[package]]
 name = "certifi"
-version = "2021.10.8"
+version = "2022.5.18"
 description = "Python package for providing Mozilla's CA Bundle."
 category = "dev"
 optional = false
-python-versions = "*"
+python-versions = ">=3.5"
 
 [[package]]
 name = "charset-normalizer"
@@ -191,7 +191,7 @@ python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
 
 [[package]]
 name = "cyclonedx-python-lib"
-version = "2.3.0"
+version = "2.4.0"
 description = "A library for producing CycloneDX SBOM (Software Bill of Materials) files."
 category = "dev"
 optional = false
@@ -546,7 +546,7 @@ python-versions = ">=3.7"
 
 [[package]]
 name = "pip-audit"
-version = "2.2.1"
+version = "2.3.0"
 description = "A tool for scanning Python environments for known vulnerabilities"
 category = "dev"
 optional = false
@@ -562,7 +562,7 @@ progress = ">=1.6"
 resolvelib = ">=0.8.0"
 
 [package.extras]
-dev = ["bump (>=1.3.1)", "flake8", "black (>=22.3.0)", "isort", "pytest", "pytest-cov", "pretend", "coverage", "interrogate", "pdoc3", "mypy", "types-requests", "types-html5lib"]
+dev = ["build", "black (>=22.3.0)", "bump (>=1.3.2)", "coverage", "flake8", "interrogate", "isort", "mypy", "pdoc3", "pretend", "pytest", "pytest-cov", "types-html5lib", "types-requests"]
 
 [[package]]
 name = "platformdirs"
@@ -970,14 +970,14 @@ python-versions = ">=3.7"
 
 [[package]]
 name = "traitlets"
-version = "5.2.0"
-description = "Traitlets Python configuration system"
+version = "5.2.1.post0"
+description = ""
 category = "dev"
 optional = false
 python-versions = ">=3.7"
 
 [package.extras]
-test = ["pytest", "pre-commit"]
+test = ["pre-commit", "pytest"]
 
 [[package]]
 name = "typer"
@@ -1125,8 +1125,8 @@ cachecontrol = [
     {file = "CacheControl-0.12.11.tar.gz", hash = "sha256:a5b9fcc986b184db101aa280b42ecdcdfc524892596f606858e0b7a8b4d9e144"},
 ]
 certifi = [
-    {file = "certifi-2021.10.8-py2.py3-none-any.whl", hash = "sha256:d62a0163eb4c2344ac042ab2bdf75399a71a2d8c7d47eac2e2ee91b9d6339569"},
-    {file = "certifi-2021.10.8.tar.gz", hash = "sha256:78884e7c1d4b00ce3cea67b44566851c4343c120abd683433ce934a68ea58872"},
+    {file = "certifi-2022.5.18-py3-none-any.whl", hash = "sha256:8d15a5a7fde18536a249c49e07e8e462b8fc13de21b3c80e8a68315dfa227c99"},
+    {file = "certifi-2022.5.18.tar.gz", hash = "sha256:6ae10321df3e464305a46e997da41ea56c1d311fb9ff1dd4e04d6f14653ec63a"},
 ]
 charset-normalizer = [
     {file = "charset-normalizer-2.0.12.tar.gz", hash = "sha256:2857e29ff0d34db842cd7ca3230549d1a697f96ee6d3fb071cfa6c7393832597"},
@@ -1188,8 +1188,8 @@ cssselect = [
     {file = "cssselect-1.1.0.tar.gz", hash = "sha256:f95f8dedd925fd8f54edb3d2dfb44c190d9d18512377d3c1e2388d16126879bc"},
 ]
 cyclonedx-python-lib = [
-    {file = "cyclonedx-python-lib-2.3.0.tar.gz", hash = "sha256:85b497202f5aa56349fe0c916f5759a363d78214b244ad658f6980233049700b"},
-    {file = "cyclonedx_python_lib-2.3.0-py3-none-any.whl", hash = "sha256:6549bff339c62f822302ee9e4f297172b93ee823d4aa9e7eee5460c5f53815cd"},
+    {file = "cyclonedx-python-lib-2.4.0.tar.gz", hash = "sha256:35ef1dbff4aab8ef143552cecde4ef9050f805957519339991e488f80cab36e2"},
+    {file = "cyclonedx_python_lib-2.4.0-py3-none-any.whl", hash = "sha256:b3fad0f36d4d7474d2ce4ff54b8138926d33d1c61fc177c707771d611b6fd75d"},
 ]
 decorator = [
     {file = "decorator-5.1.1-py3-none-any.whl", hash = "sha256:b8c3f85900b9dc423225913c5aace94729fe1fa9763b38939a95226f02d37186"},
@@ -1458,8 +1458,8 @@ pip-api = [
     {file = "pip_api-0.0.29-py3-none-any.whl", hash = "sha256:36c3211975e69c46c1d3b13b702dcc96d054d54e02147b1485300cf5fc45c1a0"},
 ]
 pip-audit = [
-    {file = "pip-audit-2.2.1.tar.gz", hash = "sha256:81825477c86fb5a6458d700ff6dfee0fd3a6d3e2e63ff365e4da4475d0f00bff"},
-    {file = "pip_audit-2.2.1-py3-none-any.whl", hash = "sha256:f7affa67a7d5cc5458c9e85b0dc9bcafcbd6030ba3a69acf7293ef0e6dd056fb"},
+    {file = "pip_audit-2.3.0-py3-none-any.whl", hash = "sha256:dececec9e7bbb7aa6335fddba8a47b0271122129e2894e9ee0691dd6bb6aeb01"},
+    {file = "pip_audit-2.3.0.tar.gz", hash = "sha256:95326d536eab1f60df0c36193675c2ab0777de3ef1b3af98ebfc378159b0bed5"},
 ]
 platformdirs = [
     {file = "platformdirs-2.5.2-py3-none-any.whl", hash = "sha256:027d8e83a2d7de06bbac4e5ef7e023c02b863d7ea5d079477e722bb41ab25788"},
@@ -1620,8 +1620,8 @@ tomli = [
     {file = "tomli-2.0.1.tar.gz", hash = "sha256:de526c12914f0c550d15924c62d72abc48d6fe7364aa87328337a31007fe8a4f"},
 ]
 traitlets = [
-    {file = "traitlets-5.2.0-py3-none-any.whl", hash = "sha256:9dd4025123fbe018a2092b2ad6984792f53ea3362c698f37473258b1fa97b0bc"},
-    {file = "traitlets-5.2.0.tar.gz", hash = "sha256:60474f39bf1d39a11e0233090b99af3acee93bbc2281777e61dd8c87da8a0014"},
+    {file = "traitlets-5.2.1.post0-py3-none-any.whl", hash = "sha256:f44b708d33d98b0addb40c29d148a761f44af740603a8fd0e2f8b5b27cf0f087"},
+    {file = "traitlets-5.2.1.post0.tar.gz", hash = "sha256:70815ecb20ec619d1af28910ade523383be13754283aef90528eb3d47b77c5db"},
 ]
 typer = [
     {file = "typer-0.4.1-py3-none-any.whl", hash = "sha256:e8467f0ebac0c81366c2168d6ad9f888efdfb6d4e1d3d5b4a004f46fa444b5c3"},
