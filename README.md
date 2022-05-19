@@ -3,10 +3,10 @@
 </h1>
 <p align="center">
     <a href="https://github.com/guedesfelipe/readtime_cli/actions/workflows/ci.yml" target="_blank">
-        <img src="https://github.com/guedesfelipe/readtime_cli/actions/workflows/ci.yml/badge.svg" />
+        <img src="https://github.com/guedesfelipe/readtime_cli/actions/workflows/ci.yml/badge.svg?branch=main" />
     </a>
     <a href="https://github.com/guedesfelipe/readtime_cli/actions/workflows/security.yml" target="_blank">
-        <img src="https://github.com/guedesfelipe/readtime_cli/actions/workflows/security.yml/badge.svg" />
+        <img src="https://github.com/guedesfelipe/readtime_cli/actions/workflows/security.yml/badge.svg?branch=main" />
     </a>
     <a href="https://codecov.io/gh/guedesfelipe/readtime_cli" target="_blank">
       <img src="https://codecov.io/gh/guedesfelipe/readtime_cli/branch/main/graph/badge.svg" />
