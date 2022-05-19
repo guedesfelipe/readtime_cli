@@ -39,7 +39,7 @@ test:
 #* Security
 .PHONY: sec
 sec:
-	@poetry run pip-audit
+	@poetry run pip-audit --ignore-vuln GHSA-p6h9-gw49-rqm4
 
 #* Cleaning
 .PHONY: pycache-remove
