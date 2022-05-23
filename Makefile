@@ -12,11 +12,11 @@ poetry-remove:
 #* Installation
 .PHONY: install
 install:
-	@poetry install -n --no-dev
+	@poetry install -n --no-dev --no-root
 
 .PHONY: install-dev
 install-dev:
-	@poetry install -n
+	@poetry install -n --no-root
 
 #* Fromatters
 .PHONY: format
@@ -39,7 +39,7 @@ test:
 #* Security
 .PHONY: sec
 sec:
-	@poetry run pip-audit --ignore-vuln GHSA-p6h9-gw49-rqm4
+	@poetry run safety check --full-report
 
 #* Cleaning
 .PHONY: pycache-remove
