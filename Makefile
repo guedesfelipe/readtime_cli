@@ -9,6 +9,12 @@ PYTHON := python
 poetry-remove:
 	@curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/install-poetry.py | $(PYTHON) - --uninstall
 
+#* Config git hook
+.PHONY: git-config-hook
+git-config-hook:
+	@cp pre-commit .git/hooks/
+	@chmod +x .git/hooks/pre-commit
+
 #* Installation
 .PHONY: install
 install:
@@ -17,6 +23,7 @@ install:
 .PHONY: install-dev
 install-dev:
 	@poetry install -n --no-root
+	@make git-config-hook
 
 #* Fromatters
 .PHONY: format
