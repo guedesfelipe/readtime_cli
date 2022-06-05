@@ -76,11 +76,6 @@ build-remove:
 .PHONY: cleanup
 cleanup: pycache-remove dsstore-remove mypycache-remove ipynbcheckpoints-remove pytestcache-remove
 
-#* Run local
-.PHONY: run-local
-run-local:
-	@poetry run uvicorn redragon_api.main:app --host 0.0.0.0 --port 88 --reload
-
 #* Coverage
 .PHONY: coverage
 coverage:
