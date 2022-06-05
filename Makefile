@@ -34,6 +34,7 @@ format:
 #* Linting
 .PHONY: lint
 lint:
+	@poetry run mypy --install-types --non-interactive
 	@poetry run blue . --check
 	@poetry run isort . -m3 --up --tc --check
 	@poetry run prospector --with-tool pycodestyle --doc-warning --no-autodetect
