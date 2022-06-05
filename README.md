@@ -93,5 +93,6 @@ readtime text FILE_PATH [OPTIONS]
 
 ### Options for all commands
 
-    --wpm INTEGER  Word Per Minute  [default: 265]
-    --help         Show help and exit.
+    --wpm INTEGER          Word Per Minute  [default: 265]
+    --language [en|pt-br]  [default: Languages.en]
+    --help                 Show this message and exit.
