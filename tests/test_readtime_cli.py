@@ -1,3 +1,4 @@
+import pkg_resources
 from typer.testing import CliRunner
 
 from readtime_cli import __version__
@@ -7,19 +8,31 @@ runner = CliRunner()
 
 
 def test_version():
-    assert __version__ == '0.1.0'
+
+    assert (
+        __version__ == pkg_resources.get_distribution('readtime-cli').version
+    )
 
 
-def test_error():
+def test_error_invalid_command():
     result = runner.invoke(app, ['test', '--city', 'Berlin'])
     assert result.exit_code == 2
     assert "Error: No such command 'test'" in result.stdout
 
 
-def test_error_2():
+def test_error_invalid_option():
     result = runner.invoke(app, ['text', '../poetry.lock', '--city', 'Berlin'])
     assert result.exit_code == 2
     assert 'Error: No such option: --city' in result.stdout
+
+
+def test_error_invalid_language():
+    result = runner.invoke(app, ['text', '../poetry.lock', '--language', 'aa'])
+    assert result.exit_code == 2
+    assert (
+        "Error: Invalid value for '--language': 'aa' is not one of"
+        in result.stdout
+    )
 
 
 def test_help():

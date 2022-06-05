@@ -18,11 +18,11 @@ git-config-hook:
 #* Installation
 .PHONY: install
 install:
-	@poetry install -n --no-dev --no-root
+	@poetry install -n --no-dev
 
 .PHONY: install-dev
 install-dev:
-	@poetry install -n --no-root
+	@poetry install -n
 	@make git-config-hook
 
 #* Fromatters
