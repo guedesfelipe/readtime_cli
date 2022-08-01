@@ -24,7 +24,7 @@ isort = "^5.10.1"
 prospector = { extras = ["with_mypy"], version = "^1.7.7" }
 pytest-cov = "^3.0.0"
 ipdb = "^0.13.9"
-safety = "^2.0.0"
+safety = "^2.1.1"
 types-setuptools = "^57.4.18"
 
 [build-system]
