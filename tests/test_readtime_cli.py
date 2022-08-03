@@ -17,28 +17,30 @@ def test_version():
 def test_error_invalid_command():
     result = runner.invoke(app, ['test', '--city', 'Berlin'])
     assert result.exit_code == 2
-    assert "Error: No such command 'test'" in result.stdout
+    assert "No such command 'test'" in result.stdout
 
 
 def test_error_invalid_option():
     result = runner.invoke(app, ['text', '../poetry.lock', '--city', 'Berlin'])
     assert result.exit_code == 2
-    assert 'Error: No such option: --city' in result.stdout
+    assert 'No such option: --city' in result.stdout
 
 
 def test_error_invalid_language():
     result = runner.invoke(app, ['text', '../poetry.lock', '--language', 'aa'])
     assert result.exit_code == 2
     assert (
-        "Error: Invalid value for '--language': 'aa' is not one of"
-        in result.stdout
+        "Invalid value for '--language': 'aa' is not one of" in result.stdout
     )
 
 
 def test_help():
     result = runner.invoke(app, ['--help'])
     assert result.exit_code == 0
-    assert 'Commands:\n  html\n  md\n  text\n  version\n' in result.stdout
+    assert 'html' in result.stdout
+    assert 'md' in result.stdout
+    assert 'text' in result.stdout
+    assert 'version' in result.stdout
 
 
 def test_version_command():
