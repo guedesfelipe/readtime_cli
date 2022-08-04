@@ -4,7 +4,7 @@ import typer
 from readtime_cli import __version__
 from readtime_cli.translate import Languages, Translate
 
-app = typer.Typer()
+app = typer.Typer(rich_markup_mode='rich')
 
 
 @app.command()
@@ -41,3 +41,7 @@ def html(
 ):
     result = str(readtime.of_html(''.join(file.readlines()), wpm=wpm))
     typer.echo(Translate.translate(result, language))
+
+
+if __name__ == '__main__':
+    app()
