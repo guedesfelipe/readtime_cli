@@ -46,7 +46,7 @@ test:
 #* Security
 .PHONY: sec
 sec:
-	@poetry run safety check --full-report
+	@poetry run safety check --full-report -i 50748
 
 #* Cleaning
 .PHONY: pycache-remove
