@@ -13,7 +13,7 @@ keywords = ["python", "readtime", "readtime_cli", "cli"]
 readtime = "readtime_cli.main:app"
 
 [tool.poetry.dependencies]
-python = ">=3.8,<=3.10"
+python = ">=3.8,<3.11"
 readtime = "^2.0.0"
 lxml = "4.9.0"
 typer = { extras = ["all"], version = "^0.6.1" }
