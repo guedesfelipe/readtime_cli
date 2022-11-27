@@ -79,7 +79,7 @@ jobs:
       - name: Run Tests ✅
         run: |
           source $VENV
-          pytest tests/
+          pytest -v -l --full-trace --cache-clear tests/
 
   codecov:
     needs: test
