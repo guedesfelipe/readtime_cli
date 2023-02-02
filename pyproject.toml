@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "readtime_cli"
-version = "0.2.2"
+version = "0.2.3"
 description = "CLI to calculates the time some text takes the average human to read, based on Medium's read time forumula."
 authors = ["Felipe Guedes <contatofelipeguedes@gmail.com>"]
 packages = [{ include = "readtime_cli" }]
