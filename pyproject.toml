@@ -15,7 +15,7 @@ readtime = "readtime_cli.main:app"
 [tool.poetry.dependencies]
 python = ">=3.8,<3.11"
 readtime = "^2.0.0"
-lxml = "4.9.0"
+lxml = "4.9.2"
 typer = { extras = ["all"], version = ">=0.6.1,<0.8.0" }
 
 [tool.poetry.dev-dependencies]
